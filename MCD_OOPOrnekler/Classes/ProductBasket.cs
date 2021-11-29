@@ -10,7 +10,7 @@ namespace MCD_OOPOrnekler.Classes
     {
         public int basketId { get; set; }
         public int clientId { get; set; }
-        public List<Product> productList { get; set; } = new List<Product>();
+        public List<Product> productList { get; set; } = new List<Product>(); //new anahtarı olmadan da yapılabilir.
         public void AddBirthdayPresent()
         {
             Product gift = new Product()

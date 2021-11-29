@@ -34,10 +34,21 @@ namespace MCD_OOPOrnekler.Classes
         }
         public void PrintClientBasket()
         {
-            //if (clientBasket.)
-            //{
-
-            //}
+            if (clientBasket.productList.Count > 0)
+            {
+                //Listeyi yazdırmadan önce doğumgünü durumuna bakmamız gerekiyor..
+                if (IsBirthDate() == true)
+                {
+                    clientBasket.AddBirthdayPresent();
+                    Console.WriteLine("Doğum Gününüz kutlu olsun! Gofret hediyeniz sepete eklendi ..");
+                }
+                int count = 1;
+                foreach (var item in clientBasket.productList)
+                {
+                    Console.WriteLine(count + " . ürünümüz: " + item.productName);
+                    count++;
+                }
+            }
         }
         #endregion
     }
