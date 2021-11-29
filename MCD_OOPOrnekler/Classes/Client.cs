@@ -45,7 +45,7 @@ namespace MCD_OOPOrnekler.Classes
                 int count = 1;
                 foreach (var item in clientBasket.productList)
                 {
-                    Console.WriteLine(count + " . ürünümüz: " + item.productName);
+                    Console.WriteLine(count + " . ürününüz: " + item.productName);
                     count++;
                 }
             }
